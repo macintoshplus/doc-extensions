@@ -5,7 +5,7 @@
                                https://php.github.io/docbook-cs/config.xsd">
 
  <project>
-  <directory alias="doc-en">en</directory>
+  <directory alias="doc-extensions">extensions</directory>
   <directory>doc-base</directory>
  </project>
 
@@ -22,12 +22,18 @@
  </paths>
 
  <entities>
-  <file>../doc-base/temp/doctype.dtd</file>
+  <file>language-defs.ent</file>
+  <file>language-snippets.ent</file>
+  <directory>entities/</directory>
+  <directory>../doc-base/entities/</directory>
+  <file>../doc-base/temp/manual.ent</file>
+  <file>../doc-base/temp/entities.ent</file>
+  <file>../doc-base/temp/file-entities.ent</file>
+  <directory>../doc-base/temp/file-entities</directory>
  </entities>
 
  <exclude>
   <pattern>output/*</pattern>
-  <pattern>appendices/extensions.xml</pattern>
  </exclude>
 
 </docbookcs>
