@@ -17,8 +17,10 @@
  <section xml:id="win32service.installation">
   &reftitle.install;
   <para>
-   &pecl.info;
-   <link xlink:href="&url.pecl.package;win32service">&url.pecl.package;win32service</link>
+   &pecl.moving.to.pie;
+  </para>
+  <para>
+   See the Packagist <link xlink:href="https://packagist.org/packages/win32service/win32service">Win32Service extension details</link>.
   </para>
  </section>
  <!-- }}} -->
