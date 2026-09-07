@@ -17,8 +17,8 @@
  <section xml:id="win32service.installation">
   &reftitle.install;
   <para>
-   To install this extension, download the prebuild DLL from <link xlink:href="https://github.com/win32service/win32service/releases">GitHub Release</link> or use PIE.
-   To install with PIE, see the Packagist <link xlink:href="https://packagist.org/packages/win32service/win32service">Win32Service extension details</link>.
+   To install this extension, download the prebuild DLL from <link xlink:href="&url.git.hub;win32service/win32service/releases">GitHub Release</link> or use PIE.
+   To install with PIE, see the Packagist <link xlink:href="&url.packagist.package;win32service">Win32Service extension details</link>.
   </para>
 
   <para>
