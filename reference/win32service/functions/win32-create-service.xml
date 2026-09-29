@@ -81,8 +81,7 @@
          <listitem>
           <simpara>
            The full path to the executable module that will be launched when
-           the service is started.  If omitted, the path to the current PHP
-           process will be used.
+           the service is started.  This key is mandatory.
           </simpara>
          </listitem>
         </varlistentry>
@@ -139,7 +138,7 @@
           <simpara>
            Informs the SCM what it should do when it detects a problem with
            the service.  The default is
-           <constant>WIN32_SERVER_ERROR_IGNORE</constant>.  Changing this
+           <constant>WIN32_SERVICE_ERROR_IGNORE</constant>.  Changing this
            value is not yet fully supported.
           </simpara>
          </listitem>
@@ -319,11 +318,11 @@
   </simpara>
   <simpara>
    A <exceptionname>ValueError</exceptionname> is thrown if the
-   value of <parameter>service</parameter> parameter is empty.
+   value of <parameter>service</parameter> key is empty or shorter than 2 characters.
   </simpara>
   <simpara>
    A <exceptionname>ValueError</exceptionname> is thrown if the
-   value of <parameter>path</parameter> parameter is missing or empty.
+   value of <parameter>path</parameter> key is missing.
   </simpara>
   <simpara>
    A <exceptionname>ValueError</exceptionname> is thrown if the

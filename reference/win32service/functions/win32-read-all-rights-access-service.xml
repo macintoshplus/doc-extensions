@@ -56,7 +56,7 @@
   &reftitle.errors;
   <simpara>
    A <exceptionname>ValueError</exceptionname> is thrown if the
-   value of <parameter>service</parameter> parameter is empty.
+   value of <parameter>service</parameter> parameter is empty or shorter than 2 characters.
   </simpara>
   <simpara>
    A <exceptionname>Win32ServiceException</exceptionname> is thrown on error.
