@@ -9,7 +9,7 @@
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <type>void</type><methodname>win32_set_service_status</methodname>
+   <type>bool</type><methodname>win32_set_service_status</methodname>
    <methodparam><type>int</type><parameter>status</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>checkpoint</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
@@ -73,10 +73,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <simpara>
-   &return.void;
-  </simpara>
-  <simpara>
-    Prior to version 1.0.0, &win32service.noerror.false.error;
+   Returns &true; on success. A <exceptionname>Win32ServiceException</exceptionname> is thrown on error.
   </simpara>
  </refsect1>
 
@@ -137,12 +134,6 @@
         previously a
         <link xmlns="http://docbook.org/ns/docbook" linkend="win32service.constants.errors">Win32 Error Code</link>
         was returned.
-       </entry>
-      </row>
-      <row>
-       <entry>PECL win32service 1.0.0</entry>
-       <entry>
-        The return type is now <type>void</type>, previously it was <type>mixed</type>.
        </entry>
       </row>
       <row>

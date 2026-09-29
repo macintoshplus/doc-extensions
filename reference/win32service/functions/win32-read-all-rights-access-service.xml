@@ -12,7 +12,7 @@
   <methodsynopsis>
    <type>array</type><methodname>win32_read_all_rights_access_service</methodname>
    <methodparam><type>string</type><parameter>servicename</parameter></methodparam>
-   <methodparam choice="opt"><type>string</type><parameter>machine</parameter><initializer>&null;</initializer></methodparam>
+   <methodparam choice="opt"><type>string</type><parameter>machine</parameter><initializer>&quot;&quot;</initializer></methodparam>
   </methodsynopsis>
   <simpara>
    Read all rights access on <parameter>servicename</parameter>

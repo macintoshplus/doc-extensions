@@ -11,10 +11,10 @@
   &reftitle.description;
   <methodsynopsis role="procedural">
    <type>bool</type><methodname>win32_set_service_pause_resume_state</methodname>
-   <methodparam choice="opt"><type>bool</type><parameter>state</parameter><initializer>true</initializer></methodparam>
+   <methodparam choice="opt"><type>bool</type><parameter>enable</parameter><initializer>true</initializer></methodparam>
   </methodsynopsis>
   <simpara>
-   If <parameter>state</parameter> parameter is provided, the pause/resume capability
+   If <parameter>enable</parameter> parameter is provided, the pause/resume capability
 is changed.
   </simpara>
 
@@ -32,7 +32,7 @@ is changed.
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>state</parameter></term>
+    <term><parameter>enable</parameter></term>
     <listitem>
      <simpara>
       &true; for enable the service pause/resume capability. &false; for disable the service pause/resume capability.
@@ -56,7 +56,7 @@ is changed.
  <refsect1 role="errors"><!-- {{{ -->
   &reftitle.errors;
   <simpara>
-   A <exceptionname>ValueError</exceptionname> is thrown if <parameter>state</parameter> is provided
+   A <exceptionname>ValueError</exceptionname> is thrown if <parameter>enable</parameter> is provided
    while the control dispatcher is already running. Call this function before
    <function>win32_start_service_ctrl_dispatcher</function>, or without argument to read the state.
   </simpara>
