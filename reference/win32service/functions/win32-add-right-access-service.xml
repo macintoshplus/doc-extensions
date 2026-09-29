@@ -82,6 +82,11 @@
    value of <parameter>username</parameter> parameter is empty.
   </simpara>
   <simpara>
+   A <exceptionname>ValueError</exceptionname> is thrown if the
+   value of <parameter>right</parameter> parameter is not a positive combination of the
+   <link linkend="win32service.constants.rights">service rights constants</link>.
+  </simpara>
+  <simpara>
    A <exceptionname>Win32ServiceException</exceptionname> is thrown on error.
   </simpara>
  </refsect1>

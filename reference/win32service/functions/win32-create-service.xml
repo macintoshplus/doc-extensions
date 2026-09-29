@@ -72,6 +72,7 @@
          <listitem>
           <simpara>
            The password that corresponds to the <parameter>user</parameter>.
+           If omitted, the default value is an empty string.
           </simpara>
          </listitem>
         </varlistentry>
@@ -94,6 +95,7 @@
            parameter should be the full path to the PHP script that you intend
            to run. If the script name or path contains spaces, then wrap the
            full path to the PHP script with <literal>"</literal>.
+           If omitted, the default value is an empty string.
           </simpara>
          </listitem>
         </varlistentry>
@@ -112,6 +114,12 @@
            Sets the service type.  If omitted, the default value is
            <constant>WIN32_SERVICE_WIN32_OWN_PROCESS</constant>.
            Don't change this unless you know what you're doing.
+          </simpara>
+          <simpara>
+           The accepted values are <constant>WIN32_SERVICE_WIN32_OWN_PROCESS</constant>,
+           <constant>WIN32_SERVICE_INTERACTIVE_PROCESS</constant> and
+           <constant>WIN32_SERVICE_WIN32_OWN_PROCESS_INTERACTIVE</constant>.
+           Any other value throws a <exceptionname>ValueError</exceptionname>.
           </simpara>
          </listitem>
         </varlistentry>
@@ -167,6 +175,7 @@
            The <parameter>base_priority</parameter> can be set to one of the
            constants define in
            <link linkend="win32service.constants.basepriorities">Win32 Base Priority Classes</link>.
+           If omitted, the default value is <constant>WIN32_NORMAL_PRIORITY_CLASS</constant>.
           </simpara>
          </listitem>
         </varlistentry>
@@ -304,6 +313,10 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
+  <simpara>
+   A <exceptionname>ValueError</exceptionname> is thrown if the value of one
+   of the string keys of <parameter>details</parameter> contains a null byte.
+  </simpara>
   <simpara>
    A <exceptionname>ValueError</exceptionname> is thrown if the
    value of <parameter>service</parameter> parameter is empty.
